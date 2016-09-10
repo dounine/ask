@@ -53,15 +53,15 @@ class MineController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
             self.numArr.addObject(big)
             
-//            let arr: NSArray = dic["dataSources"]as!NSArray
-//                    
-//                    for subDic in arr {
-//                        
-//                        let  mine = MineModel.init(dict: subDic as! [String : AnyObject])
-//                        
-//                        self.dataArr.addObject(mine)
-//                        
-//                    }
+            let arr: NSArray = dic["dataSources"]as!NSArray
+                    
+                    for subDic in arr {
+                        
+                        let  mine = MineModel.init(dict: subDic as! [String : AnyObject])
+                        
+                        self.dataArr.addObject(mine)
+                        
+                    }
         }
         
         self.MineTableView.reloadData()

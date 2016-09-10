@@ -94,7 +94,12 @@ class MainTabBar: UITabBarController {
     /// 监听加号按钮点击
     @objc private func compseBtnClick(btn: UIButton)
     {
-       print(#function)
+        
+        let  story =   UIStoryboard.init(name: "AddController", bundle: nil)
+        
+        let   add =  story.instantiateViewControllerWithIdentifier("AddController")
+        
+        self.presentViewController(add, animated: false, completion: nil)
         
     }
     // MARK: - 懒加载

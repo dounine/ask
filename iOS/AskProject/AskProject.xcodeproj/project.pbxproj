@@ -39,6 +39,8 @@
 		457AB3701D7D5040007C7E13 /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457AB36F1D7D5040007C7E13 /* MineController.swift */; };
 		457AB3721D7D5060007C7E13 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457AB3711D7D5060007C7E13 /* HomeController.swift */; };
 		457AB3781D7D5382007C7E13 /* LoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457AB3771D7D5382007C7E13 /* LoginController.storyboard */; };
+		458325FE1D83B71800CF7C2C /* CareQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458325FD1D83B71800CF7C2C /* CareQuestionController.swift */; };
+		458326001D83B73900CF7C2C /* CareQuestionController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458325FF1D83B73900CF7C2C /* CareQuestionController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		457AB36F1D7D5040007C7E13 /* MineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 		457AB3711D7D5060007C7E13 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		457AB3771D7D5382007C7E13 /* LoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginController.storyboard; sourceTree = "<group>"; };
+		458325FD1D83B71800CF7C2C /* CareQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareQuestionController.swift; sourceTree = "<group>"; };
+		458325FF1D83B73900CF7C2C /* CareQuestionController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareQuestionController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +293,8 @@
 				45041D3B1D810CB4005D7DDB /* HeadController.storyboard */,
 				45041D3F1D810CEF005D7DDB /* SettingController.swift */,
 				45041D3D1D810CC3005D7DDB /* SettingController.storyboard */,
+				458325FD1D83B71800CF7C2C /* CareQuestionController.swift */,
+				458325FF1D83B73900CF7C2C /* CareQuestionController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				457AB3781D7D5382007C7E13 /* LoginController.storyboard in Resources */,
 				451D10881D7D5CF600D74664 /* AddController.storyboard in Resources */,
 				45041D3C1D810CB4005D7DDB /* HeadController.storyboard in Resources */,
+				458326001D83B73900CF7C2C /* CareQuestionController.storyboard in Resources */,
 				451D10801D7D5C4700D74664 /* HomeController.storyboard in Resources */,
 				454EC4F81D7E66E600C86EAB /* MainTabBar.storyboard in Resources */,
 				457AB3321D7D44DA007C7E13 /* Assets.xcassets in Resources */,
@@ -513,6 +520,7 @@
 				45631A231D7FC14A00FB7902 /* MineData.swift in Sources */,
 				45041D481D817092005D7DDB /* SearchCell.swift in Sources */,
 				45041D401D810CEF005D7DDB /* SettingController.swift in Sources */,
+				458325FE1D83B71800CF7C2C /* CareQuestionController.swift in Sources */,
 				454EC5021D7EACE600C86EAB /* CommonFile.swift in Sources */,
 				457AB3281D7D44DA007C7E13 /* AppDelegate.swift in Sources */,
 				45041D441D815BE6005D7DDB /* SearchController.swift in Sources */,
