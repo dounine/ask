@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4bX-Cb-Y1V">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="BpW-HG-8XP">
+            <objects>
+                <viewController storyboardIdentifier="LoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4bX-Cb-Y1V" customClass="LoginController" customModule="AskProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTz-6d-ohH"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRc-c5-UzC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqn-QS-NKe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="39w-Fy-jqk">
+                                <rect key="frame" x="249" y="8" width="102" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="GT5-cb-neW"/>
+                                    <constraint firstAttribute="width" constant="102" id="fym-0G-JeB"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16I-6L-9KF">
+                                <rect key="frame" x="175" y="260" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="OE4-7n-uRi"/>
+                                    <constraint firstAttribute="height" constant="40" id="uoZ-PK-uRo"/>
+                                </constraints>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4bX-Cb-Y1V" id="yMt-EJ-IYL"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-LS-Emq">
+                                <rect key="frame" x="175" y="385" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="PJb-BZ-Uch"/>
+                                    <constraint firstAttribute="height" constant="40" id="ed4-yh-m5J"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="login_bottom"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="4bX-Cb-Y1V" eventType="touchUpInside" id="KpM-rH-M5q"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-gH-bQV">
+                                <rect key="frame" x="175" y="310" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Obw-Dg-z8L"/>
+                                    <constraint firstAttribute="width" constant="250" id="lUi-40-27i"/>
+                                </constraints>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4bX-Cb-Y1V" id="fw8-j2-Zjh"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pdv-LS-Emq" firstAttribute="top" secondItem="IDA-gH-bQV" secondAttribute="bottom" constant="35" id="DOn-I6-pZT"/>
+                            <constraint firstItem="pdv-LS-Emq" firstAttribute="centerX" secondItem="fqn-QS-NKe" secondAttribute="centerX" id="FuN-Kb-AmW"/>
+                            <constraint firstItem="IDA-gH-bQV" firstAttribute="centerY" secondItem="fqn-QS-NKe" secondAttribute="centerY" constant="30" id="J2O-wH-aAK"/>
+                            <constraint firstItem="IDA-gH-bQV" firstAttribute="centerX" secondItem="fqn-QS-NKe" secondAttribute="centerX" id="KPX-63-cN0"/>
+                            <constraint firstItem="16I-6L-9KF" firstAttribute="top" secondItem="39w-Fy-jqk" secondAttribute="bottom" constant="29" id="VnF-NX-LUC"/>
+                            <constraint firstItem="IDA-gH-bQV" firstAttribute="top" secondItem="16I-6L-9KF" secondAttribute="bottom" constant="10" id="nIC-7E-vLj"/>
+                            <constraint firstItem="16I-6L-9KF" firstAttribute="centerX" secondItem="fqn-QS-NKe" secondAttribute="centerX" id="tQd-oi-vEu"/>
+                            <constraint firstItem="39w-Fy-jqk" firstAttribute="centerX" secondItem="fqn-QS-NKe" secondAttribute="centerX" id="v7g-mN-zJb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fnM-of-hvF"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="IDA-gH-bQV" id="2KP-wq-BsL"/>
+                        <outlet property="userTF" destination="16I-6L-9KF" id="LXa-Ka-zcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8d-4z-vIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="group" width="102" height="222"/>
+        <image name="login_bottom" width="250" height="40"/>
+    </resources>
+</document>
